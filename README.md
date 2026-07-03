@@ -23,4 +23,4 @@ Public: architecture, schemas, fake/historical examples, audit principles, redac
 Private: prompts, scoring weights, rubrics, theme taxonomy, ticker universe, live outputs, decision thresholds, gate logic.
 Status
 Iterated across 66+ versions in live daily use across US, HK, China A-share, and Japan markets. This repository is research-process documentation. It is not investment advice, not a performance record, and not an offer of any kind.
-Collaboration inquiries: terence @tripcanvas.co
+Collaboration inquiries: terence@tripcanvas.co
