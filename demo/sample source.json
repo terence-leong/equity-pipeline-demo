@@ -1,0 +1,22 @@
+{
+  "source_name": "DEMO-A synthetic data page (fake)",
+  "ticker": "DEMO-A",
+  "as_of": "2026-06-30",
+  "volume_trend": "contracting",
+  "lines": [
+    {"label": "Price", "value": "18.40"},
+    {"label": "Revenue (TTM)", "value": "1,240"},
+    {"label": "Gross profit (TTM)", "value": "546"},
+    {"label": "Shares outstanding", "value": "210"},
+    {"label": "50-day moving average", "value": "17.92"},
+    {"label": "200-day moving average", "value": "16.10"},
+    {"label": "20-day volume avg (shares)", "value": "1800000"},
+    {"label": "52-week high", "value": "21.00"}
+  ],
+  "analyst_inputs": {
+    "support_band_low": 17.20,
+    "measured_objective": 20.92,
+    "resistance_band_low": 19.80
+  },
+  "_note": "SYNTHETIC. Net debt and the 20-day moving average are deliberately absent so the demo shows MISSING propagation and the PARTIAL data-quality gate."
+}
