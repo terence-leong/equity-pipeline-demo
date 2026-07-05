@@ -37,3 +37,16 @@ Designed for **repeatability and auditability**: locked schemas, verbatim source
 Iterated across **66+ versions** in live daily use across US, HK, China A-share, and Japan markets. This repository is research-process documentation. It is not investment advice, not a performance record, and not an offer of any kind.
 
 Collaboration inquiries: terence@tripcanvas.co
+
+
+## Run the toy pipeline
+
+A runnable, dependency-free demonstration of the audit shell — receipt echo → provenance tags → MISSING propagation → gates → locked output schema. Synthetic data only; every weight and constant is a labeled fake.
+
+```
+python demo/demo_pipeline.py
+python -m unittest discover demo -v
+```
+
+`demo_pipeline.py` reproduces the published DEMO-A scorecard block **byte-for-byte** from `sample_source.json`, printing the full audit trail (receipt echoes, provenance tags, blocked computations) along the way — and asserts the match itself (`BYTE_MATCH_PUBLISHED_ARTIFACT=True`). `test_demo_pipeline.py` is eleven passing tests, each a documented failure mode: schema drift halts, MISSING propagates instead of being estimated, untagged numbers are rejected, the regression guard trips on out-of-scope changes, and the tape gate cannot clear on partial data. There is deliberately no LLM call here: this is the deterministic enforcement shell that wraps the LLM in production, which is exactly the layer that is safe to publish.
+
